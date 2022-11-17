@@ -1,0 +1,368 @@
+@media(max-width:1300px){
+  .product{
+    &__more{
+      margin-top: 60px;
+    }
+  }
+}
+
+@media(max-width:1200px){
+  .banner-section{
+    &__slider{
+      max-width: 600px;
+    }
+    &__slider-img{
+      min-height: 380px;
+      max-width: 600px;
+    }
+    &__inner{
+      justify-content: space-around;
+    }
+  }
+  .banner-link{
+    img{
+      width: 100%;
+    }
+  }
+  .categories{
+    &__inner{
+      justify-content: space-around;
+    }
+  }
+  .catalog{
+    &__inner-list{
+      justify-content: space-around;
+    }
+  }
+}
+
+@media(max-width:1100px){
+  .menu{
+    &__item+.menu__item{
+      padding-left: 20px;
+    }
+  }
+
+  .header{
+    &__adress{
+      margin-right: 20px;
+    }
+  }
+  .card{
+    &__input-search{
+      margin-right: 0;
+    }
+    &__label-search::after{
+      right: 15px;
+    }
+  }
+}
+
+@media(max-width:968px){
+  .header{
+    &__top-inner{
+      justify-content: space-between;
+    }
+    &__bottom{
+      display: none;
+    }
+  }
+  .menu{
+    &__list{
+      display: none;
+    }
+    &__btn{
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    &__btn-line{
+      background: $default;
+      border-radius: 3px;
+      height: 3px;
+      width: 34px;
+      margin: 8px 0;
+    }
+    &__mobile-linewrapper{
+      display: block;
+      font-size: 20px;
+      line-height: 24px;
+      background: $bg;
+      overflow-x: scroll;
+    }
+    &__mobile-line{
+      padding: 14px 0 14px 15px !important;
+      min-width: 450px;
+    }
+  }
+  .banner-section{
+    &__inner{
+      margin-top: 25px;
+      flex-wrap: wrap;
+    }
+    &__slider{
+      max-width: 100%;
+    }
+    &__slider-img{
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+    &__slider-item{
+      text-align: -webkit-center; 
+    }
+  }
+  .mobile-overflow{
+    width: 1000px;
+  }
+  .tabs-wrapper{
+    overflow-x: scroll;
+  }
+  .tabs-wrapper--no-scroll{
+    overflow: hidden;
+  }
+  .breadcrumbs{
+    &__inner{
+      overflow-x: scroll;
+    }
+  }
+  .catalog{
+    &__filter-itemsinner{
+      overflow-x: scroll;
+    }
+  }
+  .footer{
+    &__top-inner{
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__top-item{
+      margin-bottom: 25px;
+    }
+  }
+  .product-card{
+    &__inner{
+      flex-wrap: wrap;
+    }
+    &__tabs{
+      display: none;
+    }
+    &__content{
+      order: -1;
+    }
+    &__btn-mobile{
+      display: block;
+      margin-top: 40px;
+    }
+    &__img-box{
+      width: 100%;
+    }
+  }
+  .card{
+    &__top-line{
+      label{
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-left: 0;
+      }
+    }
+    &__label-search::after{
+      display: none;
+    }
+    &__list-item{
+      display: block;
+      div{
+        margin-bottom: 15px;
+      }
+    }
+    &__list-itemtitle{
+      display: none;
+    }
+  }
+}
+
+@media(max-width:640px){
+  .header{
+    &__adress{
+      display: none;
+    }
+    &__top-inner{
+      min-height: 67px;
+    }
+  }
+  .logo{
+    display: none;
+    &__small{
+      display: block;
+    }
+  }
+  .banner-section{
+    &__slider-img{
+      min-height: 200px;
+    }
+    & .container{
+      padding: 0;
+    }
+  }
+  .banner-link{
+    display: none;
+    &__small{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .search{
+    &__content-btn{
+      font-size: 0;
+      line-height: 0;
+      padding: 17px;
+      background-image: url(../images/icons/search.svg);
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 24px;
+      background-color: transparent;
+      position: absolute;
+      right: 8px;
+      top: 12px;
+    }
+    &__content-input{
+      height: 50px;
+      padding-right: 55px;
+    }
+    &__content-form{
+      position: relative;
+    }
+  }
+  .catalog{
+    &__inner{
+      flex-wrap: wrap;
+    }
+    &__filter-btn{
+      margin-top: 30px;
+      button{
+        display: none;
+      }
+    }
+    &__filter{
+      display: block;
+    }
+  }
+  .aside{
+    &__btn{
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+      color: #fff;
+      background-color: $accent;
+      margin-bottom: 30px;
+    }
+  }
+  .aside-filter{
+    display: none;
+  }
+  .product-card{
+    &__title{
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+    &__buttons{
+      a + a{
+        margin-left: 15px;
+      }
+    }
+    &__img{
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width:540px){
+  .footer{
+    background: #F9F9FC;
+    &__top-inner{
+      justify-content: flex-start;
+    }
+    &__top-item{
+      width: 100%;
+      margin-right: 0;
+      border-bottom: 2px solid $bg;
+    }
+    &__top-drop{
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.0861538px;
+      color: #7F7F7F;
+      padding: 15px 0;
+      position: relative;
+      pointer-events: auto;
+    }
+    &__top-drop::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/arrow-down.svg);
+      right: 0;
+      top: 21px;
+      width: 12px;
+      height: 8px;
+    }
+    &__top-drop--active::after{
+      transform:  rotate(180deg);
+    }
+    &__top-itemdrop{
+      margin-bottom: 0;
+      border-top: 2px solid $bg;
+    }
+    &__top-society{
+      border-bottom: none;
+    }
+    &__bottom{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__bottom-link{
+      margin: 12px 0;
+    }
+    &__top-newsletter{
+      margin: 0 auto 25px;
+      width: 290px;
+      text-align: center;
+    }
+    .footer-list{
+      display: none;
+    }
+  }
+  .society-list{
+    justify-content: center;
+  }
+  .card{
+    &__input-search{
+      width: 220px;
+      display: block;
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media(max-width:440px){
+  .banner-section{
+    &__slider-img{
+      min-height: 160px;
+    }
+  }
+  .categories{
+    &__item{
+      padding: 20px 10px 16px;
+    }
+  }
+  .pagination-list{
+    &__item{
+      margin: 0;
+    }
+  }
+}
